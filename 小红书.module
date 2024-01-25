@@ -1,0 +1,49 @@
+#!name=小红书视频屏蔽
+#!desc=屏蔽小红书的视频，让你专心做自己的事情
+#!src=https://raw.githubusercontent.com/
+#!author=Junyi-99
+#!notes=Chekout the github repo: https://github.com/Junyi-99/ShadowrocketModules
+
+[MITM]
+hostname = %APPEND% *.xhscdn.com, *.xhscdn.net, *.xhscdn.cn, *.xiaohongshu.com, *.xiaohongshu.net, *.xiaohongshu.cn, *.baidu.com, *.xtra.science
+
+[Rule]
+# 测试用
+URL-REGEX,^https?:\/\/.*xtra\.science\/.*,REJECT
+# 屏蔽 视频内容
+URL-REGEX,^https?:\/\/.*\.xhscdn\.(com|net|cn)\/.*mp4.*,REJECT
+
+# 屏蔽短视频的图片
+# URL-REGEX,https?:\/\/sns-.*\.xhscdn\.(com|net|cn)\/.*imageView.*(imageMogr2).*,REJECT
+# URL-REGEX,^https?:\/\/.*tracker\.xiaohongshu\.(com|net|cn)\/.*,REJECT
+# URL-REGEX,^https?:\/\/.*.xiaohongshu\.(com|net|cn)\/.*collect,REJECT
+
+# 其他
+DOMAIN-SUFFIX,ads-img-al.xhscdn.com,REJECT
+DOMAIN-SUFFIX,xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,ads-video-al.xhscdn.com,REJECT
+DOMAIN-SUFFIX,xhscdn.net,REJECT
+DOMAIN-SUFFIX,sns-video-hw.xhscdn.net,REJECT
+DOMAIN-SUFFIX,sns-avatar-qc.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,sns-img-primary.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,fe-video-qc.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,sns-video-primary.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,fe-static.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,sns-img-hk-primary.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,ads-video-al.xhscdn.com.w.cdngslb.com,REJECT
+DOMAIN-SUFFIX,livefeedcard-hw.xhscdn.com.057f7a7d.cdnhwclxw05.com,REJECT
+DOMAIN-SUFFIX,xhscdn.com.057f7a7d.cdnhwclxw05.com,REJECT
+DOMAIN-SUFFIX,dc.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,sns-img-hw.xhscdn.net,REJECT
+DOMAIN-SUFFIX,ads-img-al.xhscdn.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,xhscdn.com.txlivecdn.com,REJECT
+DOMAIN-SUFFIX,live-source-play.xhscdn.com.txlivecdn.com,REJECT
+DOMAIN-SUFFIX,ads-img-qc.xhscdn.com,REJECT
+
+DOMAIN-SUFFIX,spider-tracker.xiaohongshu.com,REJECT
+DOMAIN-SUFFIX,crash.xiaohongshu.com,REJECT
+DOMAIN-SUFFIX,xiaohongshu.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,picasso-static.xiaohongshu.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,ci.xiaohongshu.com.cdn.cengcloud.net,REJECT
+DOMAIN-SUFFIX,xiaohongshu.starrydyn.com,REJECT
+DOMAIN-SUFFIX,t-ads.xiaohongshu.com,REJECT
