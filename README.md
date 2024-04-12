@@ -13,14 +13,15 @@
 # 怎么用
 
 1. 在 Shadowrocket 里，设置全局路由为 “配置”
-2. 在 Shadowrocket 进入配置选项卡 -> 模块 -> 新建模块 -> 然后粘贴 `.module` 文件里的内容就好了
-3. 开启 Shadowrocket 的 HTTPS 解密功能
+2. **安装模块** 在 Shadowrocket 进入配置选项卡 -> 模块 -> 新建模块 -> 然后粘贴 `.module` 文件里的内容
+3. **启用模块** 点一下模块，后面有个 勾 就说明模块被启用了。
+4. **启用 HTTPS 解密（必须）**
    1. Shadowrocket 配置选项卡 -> 右上角加号 -> 从给定的 URL 下载配置 -> URL 输入 `URL`
    2. 点击 “短视频过滤.conf” -> 编辑配置 -> HTTPS 解密 -> 启用 HTTPS 解密（打勾）
    3. 当你勾选 “启用 HTTPS 解密” 之后，会弹出来证书窗口，点击生成新的 CA 证书
    4. **安装** CA 证书到 iPhone
    5. 按照提示，前往 iPhone 设置 -> 通用 -> 关于本机 -> 证书信任设置 -> **信任**刚刚添加的证书
-5. 开启 Shadowrocket ，设置结束
+5. **启用 Shadowrocket** 开启 Shadowrocket ，设置结束
 
 # 常见问题
 
