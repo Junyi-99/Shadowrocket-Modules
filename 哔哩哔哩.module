@@ -1,0 +1,17 @@
+#!name=哔哩哔哩视频屏蔽
+#!desc=小伙子，B 瘾犯了？
+#!src=https://raw.githubusercontent.com/
+#!author=Junyi-99
+#!notes=这个屏蔽会把 B 站所有内容都屏蔽掉。因为我不知道怎么区分短视频和长视频，所以只能这样了。
+#!notes=Chekout the github repo: https://github.com/Junyi-99/ShadowrocketModules
+
+[MITM]
+hostname = %APPEND%, *.akamaized.net, *.bilibili.com
+
+[Rule]
+# Bilibili 整站
+URL-REGEX,^https?:\/\/.*bilibili\.com\/.*, REJECT
+
+# m4s 视频
+URL-REGEX,^https?:\/\/.*akamaized\.net\/.*m4s.*, REJECT
+USER-AGENT, Bilibili Freedo*m\/Mark.*, REJECT
