@@ -13,7 +13,7 @@
 # 怎么用
 
 1. 在 Shadowrocket 里，设置全局路由为 “配置”
-2. 在 Shadowrocket 进入配置选项卡 -> 模块 -> 新建模块 -> 然后粘贴 .module 文件里的内容就好了
+2. 在 Shadowrocket 进入配置选项卡 -> 模块 -> 新建模块 -> 然后粘贴 `.module` 文件里的内容就好了
 3. 开启 Shadowrocket 的 HTTPS 解密功能
    1. Shadowrocket 配置选项卡 -> 右上角加号 -> 从给定的 URL 下载配置 -> URL 输入 `URL`
    2. 点击 “短视频过滤.conf” -> 编辑配置 -> HTTPS 解密 -> 启用 HTTPS 解密（打勾）
